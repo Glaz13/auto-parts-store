@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить товар - AutoParts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">AutoParts</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="products-table.html">Сравнение</a></li>
+                    <li><a href="create-product.html">Добавить товар</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Добавить новый товар</h1>
+
+        <form class="product-form">
+            <div class="form-group">
+                <label for="product-name">Название товара:</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-price">Цена (₽):</label>
+                <input type="number" id="product-price" name="product-price" required>
+            </div>
+
+            <div class="form-group">
+                <label for="product-category">Категория:</label>
+                <select id="product-category" name="product-category">
+                    <option value="engine">Двигатель</option>
+                    <option value="brakes">Тормозная система</option>
+                    <option value="filters">Фильтры</option>
+                    <option value="electrics">Электрика</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="product-description">Описание товара:</label>
+                <textarea id="product-description" name="product-description" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="product-image">Изображение товара:</label>
+                <input type="file" id="product-image" name="product-image">
+            </div>
+
+            <button type="submit" class="btn">Добавить товар</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Интернет-магазин AutoParts. Все права защищены.</p>
+        <p>Контакты: info@autoparts.ru, +7 (800) 123-45-67</p>
+    </footer>
+</body>
+</html>
